@@ -1,3 +1,4 @@
+//Business Logic
 function generateRobogerLanguage(num){ 
   event.preventDefault();
 
@@ -6,6 +7,8 @@ function generateRobogerLanguage(num){
   console.log(userInput)
 } 
 
+
+//User Logic 
 window.addEventListener("load", function(){
   event.preventDefault();
 
