@@ -10,3 +10,6 @@ test: function should output an array from 0 to userInput's number.
 code const userInput = 10  
 Expect: generateRobogerLanguage(userInput) = [0,1,2,3,4,5,6,7,8,9,10]  
 
+test: function should replace any number in array that begins with 1 with string "beep" 
+code const userInput = 10  
+Expect: generateRobogerLanguage(userInput) = [0,"beep",2,3,4,5,6,7,8,9,10]   
