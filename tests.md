@@ -18,5 +18,8 @@ test: function should replace any number in array that contains 2 with string "B
 code const userInput = 10  
 Expect: generateRobogerLanguage(userInput) = [0,"Beep","Boop!",3,4,5,6,7,8,9,"Beep"]     
 
+test: function should replace any number in array that contains 3 with string "Won't you be my neighbor?" 
+code const userInput = 10  
+Expect: generateRobogerLanguage(userInput) = [0,"Beep","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,"Beep"]    
 
 
