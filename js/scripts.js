@@ -21,12 +21,12 @@ function generateRobogerLanguage(e){
   resultArray = [] //push the results from the processingArray into a resultsList, to be converted into a string later
 
   processingArray.forEach((num) => {
-    if ((num).match('1')){ //using array matching expressions to find strings containing each number, this method does not work properly with an array of numbers
-      resultArray.push("Beep!"); //strings that meet this condition are pushed to the result array 
+    if ((num).match('3')){ //using array matching expressions to find strings containing each number, this method does not work properly with an array of numbers
+      resultArray.push("Won\'t you be my neighbor?"); //strings that meet this condition are pushed to the result array 
     } else if ((num).match('2')){
-      resultArray.push("Boop");
-    } else if ((num).match('3')){
-      resultArray.push("Won\'t you be my neighbor?"); 
+      resultArray.push("Boop!");
+    } else if ((num).match('1')){
+      resultArray.push('Beep!'); 
     } else {
       resultArray.push(num); //strings that meet no conditions are left as is and pushed to the result array
     }
