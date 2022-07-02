@@ -18,30 +18,40 @@ function generateRobogerLanguage(e){
   const userInput = parseInt(document.getElementById("userInput").value);
   let processingArray = createUserInputArray(userInput).map(String); //user array is converted into an array of strings for processing 
 
-  console.log(processingArray);
+  console.log(processingArray); 
 
-  resultList = [] 
+  resultArray = [] //push the results from the processingArray into a resultsList, to be converted into a string later
 
   processingArray.forEach((num) => {
     if ((num).match('1')){
-      resultList.push('Beep!');
+      resultArray.push("Beep!");
     } else if ((num).match('2')){
-      resultList.push('Boop');
+      resultArray.push("Boop");
     } else if ((num).match('3')){
-      resultList.push('Wont you be my neighbor?'); 
+      resultArray.push("Won\'t you be my neighbor?"); 
     } else {
-      resultList.push(num);
+      resultArray.push(num);
     }
   });
-  
-  console.log(resultList)
 
+  let result =  resultArray.toString().replaceAll(',', ' ');   
+  document.getElementById("result").innerText = result; 
+
+
+  console.log(result);
+  console.log(typeof(result));
+  //resultsArea = document.getElementById("results-area"); 
+  //resultsArea.removeAttribute("style");
+  return result
 }; 
 
 
 //User Logic 
 window.addEventListener("load", function(){
   event.preventDefault();
+
+  //let resultsArea  = document.getElementById("results-area"); 
+  //resultsArea.style.display = "none";
 
   const form  = document.getElementById("translationForm"); 
   form.addEventListener("submit",generateRobogerLanguage);

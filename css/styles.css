@@ -1,0 +1,14 @@
+/*Header Welcome Box*/ 
+
+body{ 
+  background-color: azure;
+  font-family: monospace;
+}
+
+#header-box{
+  float: center;
+}
+
+.title-box{
+  float: center;
+}
