@@ -1,7 +1,5 @@
 Describe: generateRobogerLanguage() 
 
-integer > array > string 
-
 test: function should take in an integer and return a string.  
 code: const userInput = 123 
 Expect: generateRobogerLanguage(userInput) = "123"  PASS 
@@ -12,7 +10,7 @@ function generateRobogerLanguage(num){
   const processingArray = [] 
 
   for(let i = 0; i <= num; i++){
-    processingArray.push(i).toString(); 
+    processingArray.push(numberToString); 
   };
   let result = processingArray.toString()
 
@@ -43,27 +41,34 @@ code const userInput = 10
 Expect: generateRobogerLanguage(userInput) = [0,"Beep",2,3,4,5,6,7,8,9,"Beep"]  
 
 ///
-  function generateRobogerLanguage(num){ 
+function createUserInputArray(num) {
+    let userInputArray = []; 
 
-    let processingArray = [];  
+  for(let i = 0; i <= num; i++){
+    userInputArray.push(i); 
+  };
+  
+  return userInputArray; 
+}                                 //callback function
 
-    for(let i = 0; i <= num; i++){
+function generateRobogerLanguage(e){ 
 
-      processingArray.push(i); 
-    }
+  e.preventDefault(); 
 
-    console.log(processingArray);
+  const userInput = parseInt(document.getElementById("userInput").value);
+  let processingArray = createUserInputArray(userInput).map(String); 
 
-      for(let i = 0; i < processingArray.length; i++){
-        if (subArray.includes(1)){
-          processingArray[i] = "Beep!";
+  resultArray = [];
+
+  processingArray.forEach((num) => {
+    if ((num).match('1')){
+      resultArray.push("Beep!");
+      } else {
+      resultArray.push(num);
       } 
-    }
+  
+  return resultArray;
 
-    let result = processingArray.toString().replaceAll(',', ' ');   
-
-    return result 
-    }
 ///
 
 test: function should replace any number in array that contains 2 with string "Boop!" 
