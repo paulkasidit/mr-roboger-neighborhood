@@ -12,9 +12,9 @@ function generateRobogerLanguage(num){
   const processingArray = [] 
 
   for(let i = 0; i <= num; i++){
-    processingArray.push(i); 
+    processingArray.push(i).toString(); 
   };
-  let result = processingArray.toString().replaceAll(',', ' ');  
+  let result = processingArray.toString()
 
   return result 
 }   
@@ -32,6 +32,7 @@ function generateRobogerLanguage(num){
   for(let i = 0; i <= num; i++){
     processingArray.push(i); 
   };
+
   let result = processingArray.toString().replaceAll(',', ' ');  
 
   return result 
@@ -39,7 +40,31 @@ function generateRobogerLanguage(num){
 
 test: function should replace any number in array that contains 1 with string "Beep!" 
 code const userInput = 10  
-Expect: generateRobogerLanguage(userInput) = [0,"Beep",2,3,4,5,6,7,8,9,"Beep"]   
+Expect: generateRobogerLanguage(userInput) = [0,"Beep",2,3,4,5,6,7,8,9,"Beep"]  
+
+///
+  function generateRobogerLanguage(num){ 
+
+    let processingArray = [];  
+
+    for(let i = 0; i <= num; i++){
+
+      processingArray.push(i); 
+    }
+
+    console.log(processingArray);
+
+      for(let i = 0; i < processingArray.length; i++){
+        if (subArray.includes(1)){
+          processingArray[i] = "Beep!";
+      } 
+    }
+
+    let result = processingArray.toString().replaceAll(',', ' ');   
+
+    return result 
+    }
+///
 
 test: function should replace any number in array that contains 2 with string "Boop!" 
 code const userInput = 10  

@@ -1,11 +1,27 @@
 //Business Logic
-function generateRobogerLanguage(num){ 
-  event.preventDefault();
 
-  const userInput = parseInt(document.getElementById("userInput").value);
+const userInput = parseInt(document.getElementById("userInput").value);
 
-  console.log(userInput)
+function createUserInputArray(num) { 
+  
+  let userInputArray = []; 
+
+  for(let i = 0; i <= userInput; i++){
+    processingArray.push(i); 
+  };
+  
+  return userInputArray; 
 } 
+
+function generateRobogerLanguage(num){ 
+
+  const processingArray = createUserInputArray(userInput).map(Sring); 
+
+  
+  
+  console.log(processingArray); 
+
+};
 
 
 //User Logic 
