@@ -11,14 +11,14 @@
   <body>
     <div class = "header-box">
       <div id = "title-box">
-        <h2>Welcome curious explorer!</h2>
+        <h1>Welcome curious explorer!</h1>
       </div>
-      <p> Welcome to Mr.Roboger's neighborhood! <br> 
-      Input your text here to see how it would <br> 
-      be interpreted in his neighborhood!</p> 
+      <h3> Welcome to Mr.Roboger's neighborhood! <h3> 
+      Input your favorite number here to see how it would <br> 
+      be interpreted in his neighborhood! Counting from zero!</p> 
     </div>
-    <div class  = "image icon box">
-      <img src = "#">
+    <div class  = "image-icon-box">
+      <img src = "img/clipart4590.png">
     </div>
     <div class = "translation-form">
       <form id ="translationForm"> 
@@ -30,9 +30,12 @@
         </div>
       </form>
     </div>
-    <div class = "results-area">
+    <div id = "results-area">
       <h3>Your input translated into Mr.Roboger's language</h3>
       <p id = "result"></p>
+      <div id = "refresh">
+        <input type = "button" value = "refresh" onClick="document.location.reload(true)"></button>
+      </div>
     </div>
   </body>
 </html>

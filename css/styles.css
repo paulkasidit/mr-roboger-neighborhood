@@ -1,14 +1,50 @@
-/*Header Welcome Box*/ 
+/*General CSS*/ 
 
 body{ 
   background-color: azure;
   font-family: monospace;
 }
 
-#header-box{
+img{
+  max-width: 100%;
+  width:100%; 
+  object-fit: cover;
+  margin: auto;
+}
+
+/*Header Welcome Box*/ 
+.header-box{
   float: center;
 }
 
 .title-box{
   float: center;
+}
+
+.image-icon-box{
+  width: 195px;
+  height: 183px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/*Translation Formm */ 
+#translation-form{ 
+  font-weight: 300;
+  font-style: italic;
+}
+
+/*Submit Button*/ 
+
+/*Results Area*/ 
+
+#results-area{
+  background-color: beige;
+  border: 2px forestgreen;
+  height: 500;
+  width: 400;
+  top: 50%;
+  bottom: 50%;
+  overflow: hidden;
 }

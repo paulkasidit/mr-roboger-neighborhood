@@ -40,18 +40,21 @@ function generateRobogerLanguage(e){
 
   console.log(result);
   console.log(typeof(result));
-  //resultsArea = document.getElementById("results-area"); 
-  //resultsArea.removeAttribute("style");
+
+  let resultsArea = document.getElementById("results-area"); 
+  resultsArea.removeAttribute("style");
+
   return result
 }; 
 
 
 //User Logic 
 window.addEventListener("load", function(){
+  
   event.preventDefault();
-
-  //let resultsArea  = document.getElementById("results-area"); 
-  //resultsArea.style.display = "none";
+  
+  let resultsArea  = document.getElementById("results-area"); 
+  resultsArea.style.display = "none";
 
   const form  = document.getElementById("translationForm"); 
   form.addEventListener("submit",generateRobogerLanguage);
