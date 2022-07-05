@@ -10,9 +10,14 @@
 * CSS
 * Javascript
 
+## Tests 
+
+Tess for the project can be viewed [here]('tests.txt')
+
 ## Description
 
 This website is a final project for the Intro to Programming class at Epicodus. The website takes in an integer input and outputs from zero until the user's input, replacing certain numbers with words along the way. This fun website is meant to show you how your chosen favorite number would be interpreted in Mr. Roboger's neighborhood! The website is meant to showcase an understanding of list comprehension and mapping arrays. 
+
 
 ## Setup/Installation Requirements
 - Cloning the repo and viewing the webpage on your local machine
