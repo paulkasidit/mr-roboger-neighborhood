@@ -12,7 +12,7 @@
 
 ## Tests 
 
-Tess for the project can be viewed [here](tests.txt)
+Tests for the project can be viewed [here](tests.txt)
 
 ## Description
 
