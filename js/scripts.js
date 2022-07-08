@@ -9,19 +9,13 @@ function createUserInputArray(num) {
         userInputArray.push(i); 
       };
     return userInputArray; 
-  
 } 
 
 function generateRobogerLanguage(arr) { 
 
   resultArray = [] //push the results from the processingArray into a resultsList, to be converted into a string later
 
-<<<<<<< HEAD
-
   arr.forEach((num) => {
-=======
-  processingArray.forEach((num) => {
->>>>>>> main
     if ((num).match('3')){ //using array matching expressions to find strings containing each number, this method does not work properly with an array of numbers
       resultArray.push("Won\'t you be my neighbor?"); //strings that meet this condition are pushed to the result array 
     } else if ((num).match('2')){
@@ -39,11 +33,10 @@ function generateRobogerLanguage(arr) {
 //User Logic 
   //function to output results to DOM
 function outputResult(e){ 
+  e.preventDefault(); 
 
   let userInput = parseInt(document.getElementById("userInput").value);
   let processingArray = createUserInputArray(userInput).map(String); 
-
-  e.preventDefault(); 
 
   const result =  generateRobogerLanguage(processingArray).toString().replaceAll(',', ' '); //convert array to string, each seperated by a space   
       //hiding and then unhiding result
@@ -64,5 +57,4 @@ window.addEventListener("load", function(){
 
   const form  = document.getElementById("translationForm"); 
   form.addEventListener("submit",outputResult);
-
 });
